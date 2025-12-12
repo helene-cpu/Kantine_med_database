@@ -1,0 +1,142 @@
+body {
+  padding-bottom: 70px;
+}
+
+.topnav {
+  background-color: #ffffff;
+  height: 70px;
+  border: 0.5px solid #030000;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer {
+    position:fixed;
+     left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ed852a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #ed852a;
+    padding: 10px;
+}
+
+.bakgrunn{
+    background-image: url(/static/images/burger_bakgrunn.png);
+    background-size: cover;
+    min-height: 800px;
+    padding: 70px;
+
+}
+.tittel {
+    text-align: center;
+
+}
+
+/*Index*/
+
+.mat img {
+    height: 400px;
+    width: 100%;
+}
+
+.info {
+    text-align: center;
+}
+
+
+/* Meny*/
+
+/*Små allergier*/
+h6 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/*Hver enkelt rett i menyen*/
+.grid-item {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Varer*/
+
+/*Boks for varer*/
+.boks {
+    background-color:#ed852a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 120px auto; 
+    height: 600px;
+}
+
+/*grid oppsett for varer*/
+.varer-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr auto; 
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+/*For hver enkelt vare*/
+.vare {
+  display: contents; 
+}
+
+/*Bilder av varene*/
+.vare img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*Navn på varer*/
+.varenavn {
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+
+/*Pris på varer*/
+.pris {
+  text-align: right;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/*Welcome side*/
+.welcome_tittel{
+  text-align: center;
+  font-size: 30px;
+}
+
+.welcome_tekst{
+  text-align: center;
+}

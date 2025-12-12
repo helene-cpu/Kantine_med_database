@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bakgrunn">
+    <div class="container">
+        {% for item in kantine %}
+            <div class="grid-item">
+                <img src="{{ item.bilde }}" alt="{{ item.rett }}" style="width: 300px; height:200px; border-radius: 10px;">
+                <h3>{{ item.dag }}</h3>
+                <p>{{ item.rett }}</p>
+                <p>{{ item.beskrivelse }}</p>
+                <h6>{{ item.allergier }}</h6>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

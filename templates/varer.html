@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="bakgrunn">
+    <div class="boks">
+        <div class="tittel">
+            <h1>Varer vi tilbyr</h1>
+        </div>
+        <div class="varer-grid">
+            {% for vare in mat %}
+                <div class="vare">
+                    <img src="{{ vare.bilde }}" alt="{{ vare.vare }}" style="width: 35px;" height="50px">
+                    <span class="varenavn">{{ vare.vare }}</span>
+                    <span class="pris">{{ vare.pris }} kr</span>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="tekst2">
+            <h5>*Endringer for allergier er ikke mulig, maten er ferdiglaget</h5>
+        </div>
+        {{ tekst }}
+    </div>
+</div>
+{% endblock %}

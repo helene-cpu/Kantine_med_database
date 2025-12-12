@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Finn kontaktinformasjonen til ansatte i Akademiet her!</h1>
+<div class="container">
+    {% for item in ansatte %}
+            <div class="grid-items">
+                <img src="{{ item.bilde }}" alt="{{ item.ansatte }}" style="width: 300px; height:200px; border-radius: 10px;">
+                <h3>{{ item.navn }}</h3>
+                <h5>{{ item.stilling }}</h5>
+                <p>{{ item.epost }}</p>
+                <p>{{ item.tlf }}</p>
+                <h4>{{ item.kommentar }}</h4>
+            </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
