@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Registrer ny bruker</h2>
-<form method="POST">
-    {{ form.hidden_tag() }}
-    {{ form.name.label }} {{ form.name }}<br>
-    {{ form.username.label }} {{ form.username }}<br>
-    {{ form.password.label }} {{ form.password }}<br>
-    {{ form.address.label }} {{ form.address }}<br>
-    {{ form.submit }}
-</form>
+<div class="register_stil">
+    <p>Registrer ny bruker</p>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name }}<br>
+        {{ form.username.label }} {{ form.username }}<br>
+        {{ form.password.label }} {{ form.password }}<br>
+        {{ form.address.label }} {{ form.address }}<br>
+        {{ form.submit }}
+    </form>
+</div>
 {% endblock %}

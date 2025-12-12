@@ -140,3 +140,21 @@ h6 {
 .welcome_tekst{
   text-align: center;
 }
+
+.welcome_lenke img{
+  max-width: 200px;
+  max-height: 200x;
+  height:auto;
+}
+
+/*login side*/
+.login_stil{
+  text-align: center;
+  font-size: 30px;
+}
+
+/*register side*/
+.register_stil{
+  text-align: center;
+  font-size: 30px;
+}
